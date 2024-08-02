@@ -1,4 +1,4 @@
-import DigitalClock from "./DigitalClock";
+import DigitalClock from "./components/DigitalClock";
 
 function App() {
   return  <DigitalClock />;
