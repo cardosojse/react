@@ -1,7 +1,7 @@
-import MyComponent from "./UpdateArrays";
+import DigitalClock from "./DigitalClock";
 
 function App() {
-  return <MyComponent />;
+  return  <DigitalClock />;
 }
 
 export default App;

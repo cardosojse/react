@@ -1,11 +1,6 @@
 import { useState } from "react";
 
-// interface Car {
-//     company: string,
-//     model: string,
-//     year: number,
-//     color: string,
-// }
+type ChangeEvent = React.ChangeEvent<HTMLInputElement>;
 
 function MyComponent() {
   const [car, setCar] = useState({
@@ -14,16 +9,16 @@ function MyComponent() {
     year: 1969,
   });
 
-  function handleCompany(e) {
-    setCar((prevCar) => ({...prevCar, company: e.target.value}));
+  function handleCompany(e: ChangeEvent) {
+    setCar((prevCar) => ({ ...prevCar, company: e.target.value }));
   }
 
-  function handleModel(e) {
+  function handleModel(e: ChangeEvent) {
     setCar((prevCar) => ({ ...prevCar, model: e.target.value }));
   }
 
-  function handleYear(e) {
-    setCar((prevCar) => ({...prevCar, year: e.target.value}));
+  function handleYear(e: ChangeEvent) {
+    setCar((prevCar) => ({ ...prevCar, year: Number(e.target.value) }));
   }
 
   return (
@@ -34,19 +29,19 @@ function MyComponent() {
       </p>
       <label>
         Company:
-        <br/>
+        <br />
         <input type="text" value={car.company} onChange={handleCompany} />
       </label>
-      <br/>
+      <br />
       <label>
         Model:
-        <br/>
+        <br />
         <input type="text" value={car.model} onChange={handleModel} />
       </label>
-      <br/>
+      <br />
       <label>
         Year:
-        <br/>
+        <br />
         <input type="number" value={car.year} onChange={handleYear} />
       </label>
     </>
