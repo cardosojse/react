@@ -1,7 +1,9 @@
-import DigitalClock from "./components/DigitalClock";
+import Stopwatch from "./components/Stopwatch";
 
 function App() {
-  return  <DigitalClock />;
+  return  (
+    <Stopwatch />
+  );
 }
 
 export default App;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function MyComponent() {
+function Task() {
   const [tasks, setTask] = useState<string[]>([]);
 
   function addTask() {
@@ -39,4 +39,4 @@ function MyComponent() {
   );
 }
 
-export default MyComponent;
+export default Task;

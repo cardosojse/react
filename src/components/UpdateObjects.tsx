@@ -2,7 +2,7 @@ import { useState } from "react";
 
 type ChangeEvent = React.ChangeEvent<HTMLInputElement>;
 
-function MyComponent() {
+function Car() {
   const [car, setCar] = useState({
     company: "Ford",
     model: "Mustang",
@@ -48,4 +48,4 @@ function MyComponent() {
   );
 }
 
-export default MyComponent;
+export default Car;

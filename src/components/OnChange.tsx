@@ -15,7 +15,7 @@ function Input({ returnValue, ...rest }: InputChildProps) {
   );
 }
 
-function MyComponent() {
+function Delivery() {
   const [name, setName] = useState("");
   const [quantity, setQuantity] = useState(0);
   const [product, setProduct] = useState("");
@@ -85,4 +85,4 @@ function MyComponent() {
   );
 }
 
-export default MyComponent;
+export default Delivery;

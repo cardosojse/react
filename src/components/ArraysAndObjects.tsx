@@ -19,7 +19,7 @@ function Input({ returnValue, ...rest }: InputChildProps) {
   );
 }
 
-function MyComponent() {
+function CarForm() {
   const [cars, setCar] = useState<Car[]>([]);
   const [year, setYear] = useState(new Date().getFullYear());
   const [maker, setMaker] = useState("");
@@ -82,4 +82,4 @@ function MyComponent() {
   );
 }
 
-export default MyComponent;
+export default CarForm;
